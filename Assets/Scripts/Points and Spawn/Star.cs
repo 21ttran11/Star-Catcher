@@ -7,6 +7,7 @@ public class Fish : MonoBehaviour
     Net net;
     [SerializeField] 
     float MoveSpeed = 1f;
+    public ParticleSystem particles;
 
     private void Start()
     {
@@ -22,5 +23,12 @@ public class Fish : MonoBehaviour
     private void OnDestroy()
     {
         Debug.Log("Bye Bye Fish");
+        PlayParticleEffect();
+    }
+
+    private void PlayParticleEffect()
+    {
+        GameObject particleInstance = Instantiate(particles, transform.position, Quaternion.identity).gameObject;
+        Destroy(particleInstance, 2f);
     }
 }

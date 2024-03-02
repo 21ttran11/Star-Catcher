@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 9128024001943825775}
   - component: {fileID: 5825082192554445024}
-  - component: {fileID: 9072163394125938897}
   - component: {fileID: 295360091088317108}
+  - component: {fileID: 1584359052182598057}
   m_Layer: 0
   m_Name: Triangle
-  m_TagString: Fish
+  m_TagString: Star
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -86,19 +86,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &9072163394125938897
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2507220487489265280}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 840fbc2b351f624418a87bad899271b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MoveSpeed: 2
 --- !u!58 &295360091088317108
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -134,3 +121,17 @@ CircleCollider2D:
   m_Offset: {x: 0.0006250288, y: 0.0032113036}
   serializedVersion: 2
   m_Radius: 0.2894133
+--- !u!114 &1584359052182598057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2507220487489265280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 840fbc2b351f624418a87bad899271b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MoveSpeed: 1
+  particles: {fileID: 8545491976974404906, guid: 6b647d8bf13f92f4997f2edae56fe911, type: 3}
