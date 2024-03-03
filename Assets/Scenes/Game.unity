@@ -669,7 +669,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3833d31021b8ff94c955ca114871f9fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 30
+  timeRemaining: 50
   timer: {fileID: 635548828}
   endCanvas: {fileID: 928520965}
 --- !u!114 &635548828
