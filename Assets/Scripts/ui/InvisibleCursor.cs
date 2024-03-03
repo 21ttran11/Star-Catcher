@@ -10,4 +10,12 @@ public class InvisibleCursor : MonoBehaviour
         Cursor.visible = false;
     }
 
+    private void Update()
+    {
+        if (Time.timeScale == 0)
+        {
+            Cursor.visible = true;
+        }
+    }
+
 }

@@ -8,6 +8,8 @@ public class UI : MonoBehaviour
     [SerializeField] TextMeshProUGUI timer;
     bool isFinished = false;
 
+    [SerializeField] GameObject endCanvas;
+
     void Update()
     {
         if (!isFinished)
@@ -16,12 +18,28 @@ public class UI : MonoBehaviour
             if (timeRemaining <= 0)
             {
                 isFinished = true;
+                PauseGame();
+                ShowEnd();
             }
             else
             {
                 int seconds = Mathf.FloorToInt(timeRemaining % 60);
                 timer.text = seconds.ToString();
             }
+        if (isFinished)
+            {
+
+            }
         }
     }
+
+    void PauseGame()
+    {
+        Time.timeScale = 0f;
+    }
+    void ShowEnd()
+    {
+        endCanvas.SetActive(true);
+    }
+
 }

@@ -8,6 +8,7 @@ public class Fish : MonoBehaviour
     [SerializeField] 
     float MoveSpeed = 1f;
     public ParticleSystem particles;
+    [SerializeField] int rotationSpeed;
 
     private void Start()
     {
@@ -17,7 +18,7 @@ public class Fish : MonoBehaviour
 
     private void Update()
     {
-        transform.position = Vector2.MoveTowards(transform.position, net.transform.position, Time.deltaTime * MoveSpeed); // object moves towards the net (center of screen)
+        transform.position = Vector2.MoveTowards(transform.position, net.transform.position, Time.deltaTime * MoveSpeed);
     }
 
     private void OnDestroy()
