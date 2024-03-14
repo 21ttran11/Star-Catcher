@@ -570,6 +570,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OrangeStar
       objectReference: {fileID: 0}
+    - target: {fileID: 5825082192554445024, guid: 24985d7b3c837564abda0b8df7a653b4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 9128024001943825775, guid: 24985d7b3c837564abda0b8df7a653b4, type: 3}
       propertyPath: m_LocalScale.x
       value: 6.327675
@@ -1696,6 +1700,10 @@ PrefabInstance:
     - target: {fileID: 3052311894853934772, guid: 5c8019f438cdea9409819e566e141e31, type: 3}
       propertyPath: m_Name
       value: BlueStar Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6360854694755010772, guid: 5c8019f438cdea9409819e566e141e31, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8520198854447934811, guid: 5c8019f438cdea9409819e566e141e31, type: 3}
       propertyPath: m_LocalScale.x
